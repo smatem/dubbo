@@ -1,0 +1,5 @@
+CMD进入根目录
+D:\XGD_SVN\Trunk\Code\Web\dubbo\
+执行命令
+MAVEN_OPTS= $MAVEN_OPTS -Xms256m -Xmx1024m -XX:MaxPermSize=128m -XX:ReservedCodeCacheSize=64m 具体大小，可根据自己的情况调整(测试环境不重要)
+再次执行：mvn clean install -Dmaven.test.skip（Tomcat Ver 8.0.*, Java Ver 1.7）
