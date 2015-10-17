@@ -1,6 +1,7 @@
 $$$$   Smatem.com Tips   $$$$
 1. 源码下载
-先从SVN：https://github.com/smatem/dubbo/trunk/dubbo（dubbo-admin已经打好dubbo-admin-2.5.4-SNAPSHOT.war WAR包）下载建立MAVEN项目
+先从SVN：https://github.com/smatem/dubbo/trunk/dubbo
+War包已Build（dubbo-admin/target/dubbo-admin-2.5.4-SNAPSHOT.war）Update建立MAVEN项目
 (Alibaba Dubbo gitbub URL：https://github.com/alibaba/dubbo)
 
 2. 准备软件
@@ -12,7 +13,7 @@ Maven配置(可不执行) MAVEN_OPTS= $MAVEN_OPTS -Xms256m -Xmx1024m -XX:MaxPerm
 创建eclipse项目  mvn eclipse:eclipse
 执行命令打包     mvn clean install -Dmaven.test.skip  （Tomcat Ver 8.0.*, Java Ver 1.7）
 
-5. 进入dubbo-admin/target/路径找到dubbo-admin-2.5.4-SNAPSHOT.war，将War包放入tomcat建立WEB控制台
+4. 进入dubbo-admin/target/路径找到dubbo-admin-2.5.4-SNAPSHOT.war，将War包放入tomcat建立WEB控制台
    安装Zookeeper，找到WEB-INF/dubbo.properties，配置注册中心（zookeeper地址）
 
 
